@@ -22,15 +22,11 @@ export default function Education() {
                 <span className="text-sm text-gray-500 font-medium">Expected Graduation: June 2026</span>
               </div>
               <p className="text-lg text-blue-600 font-medium mb-4">
-                Bachelors of Science in Mathematical Computer Science
+                B.S. Mathematical Computer Science | Minor: Data Science
               </p>
               <div className="space-y-2 text-gray-700">
-                <p className="font-medium">Data Science Minor</p>
                 <p className="text-sm">
-                  <span className="font-medium">Relevant Courses:</span> Multivariable Calculus, Differential Equations, Linear Algebra, Mathematical Reasoning, Modern Algebra, Data Structures, Programming in Java, MATLAB, and C
-                </p>
-                <p className="text-sm">
-                  <span className="font-medium">Data Science Courses:</span> Statistical Methods, Programming in Python and Pandas, Data Science in Practice using Jupyter
+                  <span className="font-medium">Relevant Coursework:</span> Linear Algebra, Data Structures, Java & C Programming, Machine Learning, Statistical Methods, Statistical Inference, Data Modeling, Python & Pandas, Data Science in Practice
                 </p>
               </div>
             </div>
