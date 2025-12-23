@@ -1,0 +1,66 @@
+import { ArrowDown } from "lucide-react";
+
+export default function Hero() {
+  return (
+    <section className="pt-12 sm:pt-20 pb-12 sm:pb-20 bg-gradient-to-br from-blue-50 to-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          {/* Left: Text Content */}
+          <div className="space-y-6 order-2 md:order-1">
+            <div>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                Matthew <span className="text-blue-600">Vincent</span> Paoletta
+              </h1>
+              <p className="text-xl text-gray-600 mt-4">
+                Computer Science Student at UC San Diego
+              </p>
+            </div>
+
+            <p className="text-lg text-gray-700 leading-relaxed max-w-lg">
+              Building innovative solutions with a focus on data analysis, web development, and automation. Currently developing a Chrome Extension to revolutionize academic organization.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href="#contact"
+                className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition font-medium text-center"
+              >
+                Get In Touch
+              </a>
+              <a
+                href="https://github.com/Matthew-Paoletta"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-200 text-gray-900 px-8 py-3 rounded-lg hover:bg-gray-300 transition font-medium text-center"
+              >
+                GitHub
+              </a>
+            </div>
+
+            <div className="flex flex-col gap-2 text-sm text-gray-600">
+              <p>📧 matthew.paoletta73@gmail.com</p>
+              <p>📱 (760) 574-2440</p>
+              <p>📍 San Diego, CA</p>
+            </div>
+          </div>
+
+          {/* Right: Photo Placeholder */}
+          <div className="flex justify-center md:justify-end order-1 md:order-2">
+            <div className="w-64 h-64 sm:w-72 sm:h-72 rounded-2xl bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center shadow-lg">
+              <div className="text-white text-center">
+                <div className="text-6xl mb-2">📷</div>
+                <p className="text-sm">Profile Photo</p>
+                <p className="text-xs opacity-75 mt-1">Add your photo here</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <div className="flex justify-center mt-12 animate-bounce">
+        <ArrowDown className="w-6 h-6 text-blue-600" />
+      </div>
+    </section>
+  );
+}
