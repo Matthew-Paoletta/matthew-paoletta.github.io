@@ -9,7 +9,8 @@ export default function Contact() {
           <div className="text-center space-y-4">
             <h2 className="text-3xl sm:text-4xl font-bold">Get In Touch</h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              I'm always interested in hearing about new projects and opportunities. Feel free to reach out!
+              I'm always interested in hearing about new projects and
+              opportunities. Feel free to reach out!
             </p>
           </div>
 
@@ -56,7 +57,9 @@ export default function Contact() {
           {/* Social Links */}
           <div className="border-t border-gray-800 pt-8">
             <div className="space-y-4">
-              <h3 className="text-center font-semibold text-lg">Connect with Me</h3>
+              <h3 className="text-center font-semibold text-lg">
+                Connect with Me
+              </h3>
               <div className="flex justify-center gap-8">
                 <a
                   href="https://github.com/Matthew-Paoletta"
@@ -83,11 +86,10 @@ export default function Contact() {
           {/* Bottom Footer */}
           <div className="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm space-y-2">
             <p>
-              © {new Date().getFullYear()} Matthew Vincent Paoletta. All rights reserved.
+              © {new Date().getFullYear()} Matthew Vincent Paoletta. All rights
+              reserved.
             </p>
-            <p>
-              Built with React, TypeScript, and Tailwind CSS
-            </p>
+            <p>Built with React, TypeScript, and Tailwind CSS</p>
           </div>
         </div>
       </div>

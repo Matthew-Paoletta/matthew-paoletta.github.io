@@ -14,13 +14,7 @@ export default function Projects() {
         "Parsed uploaded syllabi using OCR techniques to identify assignments, exams, and deadlines automatically",
         "Designed a dashboard-style interface to display upcoming tasks and reminders in an organized format that assisted students in managing their work at school",
       ],
-      technologies: [
-        "JavaScript",
-        "CSS",
-        "HTML",
-        "OCR",
-        "Google API",
-      ],
+      technologies: ["JavaScript", "CSS", "HTML", "OCR", "Google API"],
       github: "https://github.com/Matthew-Paoletta",
     },
     {
@@ -34,13 +28,22 @@ export default function Projects() {
         "Performed correlation analysis across more than 30 performance metrics to study postseason success factors",
         "Created visualizations to compare trends and clearly communicate statistical relationships and findings",
       ],
-      technologies: ["Python", "Jupyter Notebooks", "Data Analysis", "Visualization"],
+      technologies: [
+        "Python",
+        "Jupyter Notebooks",
+        "Data Analysis",
+        "Visualization",
+      ],
       github: "https://github.com/Matthew-Paoletta",
     },
   ];
 
   return (
-    <section id="projects" className="py-16 sm:py-24 bg-white" data-section="projects">
+    <section
+      id="projects"
+      className="py-16 sm:py-24 bg-white"
+      data-section="projects"
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-12">
           {/* Section Header */}

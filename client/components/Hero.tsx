@@ -17,7 +17,11 @@ export default function Hero() {
             </div>
 
             <p className="text-lg text-gray-700 leading-relaxed max-w-lg">
-              Passionate about solving complex problems through elegant software solutions. Combining mathematics, data science, and engineering to build tools that make a real-world impact. Currently leading software development for assistive robotic solutions at Tikkun Olam Makers.
+              Passionate about solving complex problems through elegant software
+              solutions. Combining mathematics, data science, and engineering to
+              build tools that make a real-world impact. Currently leading
+              software development for assistive robotic solutions at Tikkun
+              Olam Makers.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

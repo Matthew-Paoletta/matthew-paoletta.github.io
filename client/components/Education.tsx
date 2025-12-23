@@ -13,16 +13,16 @@ export default function Education() {
     },
     minor: {
       title: "Data Science Minor",
-      courses: [
-        "Data Modeling",
-        "Python & Pandas",
-        "Data Science in Practice",
-      ],
+      courses: ["Data Modeling", "Python & Pandas", "Data Science in Practice"],
     },
   };
 
   return (
-    <section id="about" className="py-16 sm:py-24 bg-white" data-section="education">
+    <section
+      id="about"
+      className="py-16 sm:py-24 bg-white"
+      data-section="education"
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-12">
           {/* Section Header */}
@@ -42,8 +42,12 @@ export default function Education() {
                   University of California, San Diego
                 </h3>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-4 text-gray-700">
-                  <span className="text-lg font-semibold">📍 San Diego, CA</span>
-                  <span className="text-lg font-semibold">🎓 Expected June 2026</span>
+                  <span className="text-lg font-semibold">
+                    📍 San Diego, CA
+                  </span>
+                  <span className="text-lg font-semibold">
+                    🎓 Expected June 2026
+                  </span>
                 </div>
               </div>
 

@@ -14,7 +14,11 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" className="py-16 sm:py-24 bg-gray-50" data-section="experience">
+    <section
+      id="experience"
+      className="py-16 sm:py-24 bg-gray-50"
+      data-section="experience"
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-12">
           {/* Section Header */}

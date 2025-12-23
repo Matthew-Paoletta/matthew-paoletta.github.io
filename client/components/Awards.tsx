@@ -39,16 +39,25 @@ export default function Awards() {
 
                 <div className="space-y-3 text-gray-700">
                   <div>
-                    <p className="font-semibold mb-1">Graduating Class of 504 with 4.75 GPA</p>
+                    <p className="font-semibold mb-1">
+                      Graduating Class of 504 with 4.75 GPA
+                    </p>
                     <p>
-                      Worked diligently to maintain the highest GPA while taking a multitude of higher-level courses including Dual Enrollment classes at College of the Desert and 9 Advanced Placement Tests.
+                      Worked diligently to maintain the highest GPA while taking
+                      a multitude of higher-level courses including Dual
+                      Enrollment classes at College of the Desert and 9 Advanced
+                      Placement Tests.
                     </p>
                   </div>
 
                   <div>
-                    <p className="font-semibold mb-1">Advanced Academic Achievement</p>
+                    <p className="font-semibold mb-1">
+                      Advanced Academic Achievement
+                    </p>
                     <p>
-                      Accrued a total of 54 college credits prior to entering UC San Diego, becoming a sophomore in the first year of college.
+                      Accrued a total of 54 college credits prior to entering UC
+                      San Diego, becoming a sophomore in the first year of
+                      college.
                     </p>
                   </div>
                 </div>

@@ -15,7 +15,11 @@ export default function Leadership() {
   ];
 
   return (
-    <section id="leadership" className="py-16 sm:py-24 bg-gray-50" data-section="leadership">
+    <section
+      id="leadership"
+      className="py-16 sm:py-24 bg-gray-50"
+      data-section="leadership"
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-12">
           {/* Section Header */}
@@ -43,7 +47,9 @@ export default function Leadership() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4 mb-4">
-                  <p className="font-semibold text-blue-600">{role.organization}</p>
+                  <p className="font-semibold text-blue-600">
+                    {role.organization}
+                  </p>
                   <p className="text-gray-600">{role.location}</p>
                 </div>
 

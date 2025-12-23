@@ -6,7 +6,16 @@ export default function Skills() {
     },
     {
       name: "Tools & Technologies",
-      skills: ["Git", "JupyterLab", "GDB", "Valgrind", "NumPy", "Pandas", "HTML", "CSS"],
+      skills: [
+        "Git",
+        "JupyterLab",
+        "GDB",
+        "Valgrind",
+        "NumPy",
+        "Pandas",
+        "HTML",
+        "CSS",
+      ],
     },
   ];
 
