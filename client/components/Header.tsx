@@ -13,16 +13,16 @@ export default function Header() {
           {/* Navigation Links */}
           <div className="hidden md:flex items-center gap-8">
             <a href="#about" className="text-gray-600 hover:text-gray-900 transition">
-              About
+              Education
             </a>
-            <a href="#skills" className="text-gray-600 hover:text-gray-900 transition">
-              Skills
+            <a href="#experience" className="text-gray-600 hover:text-gray-900 transition">
+              Experience
             </a>
             <a href="#projects" className="text-gray-600 hover:text-gray-900 transition">
               Projects
             </a>
-            <a href="#experience" className="text-gray-600 hover:text-gray-900 transition">
-              Experience
+            <a href="#leadership" className="text-gray-600 hover:text-gray-900 transition">
+              Leadership
             </a>
             <a href="#contact" className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
               Contact
