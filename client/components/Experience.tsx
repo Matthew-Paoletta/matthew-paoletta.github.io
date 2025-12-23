@@ -1,26 +1,14 @@
 export default function Experience() {
   const experiences = [
     {
-      title: "Operational Student Worker",
-      company: "Undergraduate Office of Admissions",
-      location: "La Jolla, CA",
-      date: "May 2024 - Present",
+      title: "Head of Software Engineering",
+      company: "Tikkun Olam Makers (TOM)",
+      location: "San Diego, CA",
+      date: "April 2025 - Present",
       highlights: [
-        "Processed and managed all incoming office mail and documents, ensuring accurate sorting, delivery, and digital archiving for a high-volume admissions office",
-        "Maintained data integrity by meticulously scanning, indexing, and verifying document types and CEEB codes to enable error-free assignment to admissions officers",
-        "Provided direct client support by proactively researching document inquiries and professionally triaging phone calls to resolve challenges for students, officers, and managers",
-      ],
-    },
-    {
-      title: "Vice President of Risk Management",
-      company: "Alpha Epsilon Pi Fraternity",
-      location: "La Jolla, CA",
-      date: "January 2025 - Present",
-      highlights: [
-        "Responsible for safety and well-being of the members during fraternal philanthropic events",
-        "Ensuring risk procedures are being followed for our charitable events along with gathering relevant materials",
-        "Scheduling volunteers, working within a fixed schedule, and creating group chats for risk teams, establishing clear communication and coordination with the team",
-        "Managing a budget to keep the space the chapter uses clean, to guarantee future partnerships with that locale",
+        "Led development of software for a nonprofit building assistive robotic solutions to improve daily independence for elderly and disabled individuals",
+        "Translated real-world accessibility challenges into system requirements and implemented core functionality in Python to support reliable, user-centered solutions",
+        "Collaborated with mechanical engineers and designers to integrate software with physical hardware, ensuring solutions were practical, safe, and aligned with community needs",
       ],
     },
   ];
