@@ -9,7 +9,7 @@ export default function Hero() {
           <div className="space-y-6 order-2 md:order-1">
             <div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Matthew <span className="text-blue-600">Paoletta</span>
+                Matthew <span className="text-green-600">Paoletta</span>
               </h1>
               <p className="text-xl text-gray-600 mt-4">
                 Mathematical Computer Science Student
