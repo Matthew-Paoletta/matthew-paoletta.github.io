@@ -1,20 +1,12 @@
 export default function Skills() {
   const skillCategories = [
     {
-      name: "Programming Languages",
-      skills: ["Java", "C", "Python", "MATLAB", "Javascript", "Assembly"],
+      name: "Languages",
+      skills: ["Python", "Java", "JavaScript", "C", "MATLAB"],
     },
     {
-      name: "Software Development",
-      skills: ["Git/Github", "GDB", "Valgrind", "Vim", "VSCode"],
-    },
-    {
-      name: "Data Analysis",
-      skills: ["JupyterLab", "NumPy", "Pandas", "Baby Pandas", "SVR"],
-    },
-    {
-      name: "Web Development",
-      skills: ["HTML", "CSS", "React", "Tailwind CSS"],
+      name: "Tools & Technologies",
+      skills: ["Git", "JupyterLab", "GDB", "Valgrind", "NumPy", "Pandas", "HTML", "CSS"],
     },
   ];
 
