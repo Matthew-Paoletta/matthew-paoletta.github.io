@@ -51,7 +51,7 @@ export default function Projects() {
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">
               Projects
             </h2>
-            <div className="w-12 h-1 bg-blue-600 rounded-full"></div>
+            <div className="w-12 h-1 bg-green-600 rounded-full"></div>
           </div>
 
           {/* Projects Grid */}
@@ -108,7 +108,7 @@ export default function Projects() {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium transition"
+                      className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-medium transition"
                     >
                       <Github className="w-5 h-5" />
                       View on GitHub
