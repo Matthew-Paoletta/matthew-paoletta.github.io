@@ -15,7 +15,7 @@ export default function Leadership() {
   ];
 
   return (
-    <section className="py-16 sm:py-24 bg-gray-50">
+    <section id="leadership" className="py-16 sm:py-24 bg-gray-50" data-section="leadership">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-12">
           {/* Section Header */}
