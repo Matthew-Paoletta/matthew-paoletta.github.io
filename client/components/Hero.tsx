@@ -9,15 +9,15 @@ export default function Hero() {
           <div className="space-y-6 order-2 md:order-1">
             <div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Matthew <span className="text-blue-600">Vincent</span> Paoletta
+                Matthew <span className="text-blue-600">Paoletta</span>
               </h1>
               <p className="text-xl text-gray-600 mt-4">
-                Computer Science Student at UC San Diego
+                Mathematical Computer Science Student
               </p>
             </div>
 
             <p className="text-lg text-gray-700 leading-relaxed max-w-lg">
-              Computer Science student passionate about building software solutions that make a real-world impact. Currently leading software development for assistive robotic solutions at Tikkun Olam Makers.
+              Passionate about solving complex problems through elegant software solutions. Combining mathematics, data science, and engineering to build tools that make a real-world impact. Currently leading software development for assistive robotic solutions at Tikkun Olam Makers.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
