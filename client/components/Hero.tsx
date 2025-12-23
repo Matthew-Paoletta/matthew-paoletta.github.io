@@ -17,7 +17,7 @@ export default function Hero() {
             </div>
 
             <p className="text-lg text-gray-700 leading-relaxed max-w-lg">
-              Building innovative solutions with a focus on data analysis, web development, and automation. Currently developing a Chrome Extension to revolutionize academic organization.
+              Computer Science student passionate about building software solutions that make a real-world impact. Currently leading software development for assistive robotic solutions at Tikkun Olam Makers.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
