@@ -68,7 +68,7 @@ export default function Contact() {
                   <span className="hidden sm:inline">GitHub</span>
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/matthew-paoletta-b13738299/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-blue-400 transition flex items-center gap-2"
