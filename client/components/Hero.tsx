@@ -44,15 +44,13 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right: Photo Placeholder */}
+          {/* Right: Photo */}
           <div className="flex justify-center md:justify-end order-1 md:order-2">
-            <div className="w-64 h-64 sm:w-72 sm:h-72 rounded-2xl bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center shadow-lg">
-              <div className="text-white text-center">
-                <div className="text-6xl mb-2">📷</div>
-                <p className="text-sm">Profile Photo</p>
-                <p className="text-xs opacity-75 mt-1">Add your photo here</p>
-              </div>
-            </div>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Fb779523732e04751a10e9de1b694bad3%2Ff1195e21dbc242de88ab0834e5ab3ee5?format=webp&width=800"
+              alt="Matthew Vincent Paoletta"
+              className="w-64 h-64 sm:w-72 sm:h-72 rounded-2xl object-cover shadow-lg"
+            />
           </div>
         </div>
       </div>
