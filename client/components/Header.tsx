@@ -7,7 +7,7 @@ export default function Header() {
         <nav className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <Link to="/" className="font-bold text-xl sm:text-2xl text-gray-900">
-            MVP<span className="text-blue-600">.</span>
+            MVP<span className="text-green-600">.</span>
           </Link>
 
           {/* Navigation Links */}
