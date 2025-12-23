@@ -30,11 +30,11 @@ export default function Education() {
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">
               Education
             </h2>
-            <div className="w-12 h-1 bg-blue-600 rounded-full"></div>
+            <div className="w-12 h-1 bg-green-600 rounded-full"></div>
           </div>
 
           {/* University Card */}
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 sm:p-10 border border-blue-200">
+          <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 sm:p-10 border border-green-200">
             <div className="space-y-8">
               {/* University Header */}
               <div>
@@ -50,10 +50,10 @@ export default function Education() {
               {/* Curriculum Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Major */}
-                <div className="bg-white rounded-xl p-6 shadow-sm border-l-4 border-blue-600">
+                <div className="bg-white rounded-xl p-6 shadow-sm border-l-4 border-green-600">
                   <div className="space-y-4">
                     <div>
-                      <h4 className="text-2xl font-bold text-blue-600 mb-1">
+                      <h4 className="text-2xl font-bold text-green-600 mb-1">
                         B.S. {coursesByTrack.major.title}
                       </h4>
                       <p className="text-sm text-gray-600">Primary Focus</p>
@@ -67,7 +67,7 @@ export default function Education() {
                         {coursesByTrack.major.courses.map((course, idx) => (
                           <span
                             key={idx}
-                            className="bg-blue-100 text-blue-700 px-3 py-1.5 rounded-lg text-xs font-medium hover:bg-blue-200 transition"
+                            className="bg-green-100 text-green-700 px-3 py-1.5 rounded-lg text-xs font-medium hover:bg-green-200 transition"
                           >
                             {course}
                           </span>
@@ -107,9 +107,9 @@ export default function Education() {
               </div>
 
               {/* Stats Bar */}
-              <div className="grid grid-cols-3 gap-4 pt-6 border-t border-blue-200">
+              <div className="grid grid-cols-3 gap-4 pt-6 border-t border-green-200">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600">6</div>
+                  <div className="text-3xl font-bold text-green-600">6</div>
                   <p className="text-sm text-gray-600 mt-1">Major Courses</p>
                 </div>
                 <div className="text-center">
