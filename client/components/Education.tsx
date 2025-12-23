@@ -117,7 +117,7 @@ export default function Education() {
                   <p className="text-sm text-gray-600 mt-1">Minor Courses</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600">2026</div>
+                  <div className="text-3xl font-bold text-green-600">2026</div>
                   <p className="text-sm text-gray-600 mt-1">Target Grad</p>
                 </div>
               </div>
