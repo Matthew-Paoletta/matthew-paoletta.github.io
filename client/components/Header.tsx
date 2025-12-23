@@ -24,7 +24,7 @@ export default function Header() {
             <a href="#leadership" className="text-gray-600 hover:text-gray-900 transition">
               Leadership
             </a>
-            <a href="#contact" className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
+            <a href="#contact" className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition">
               Contact
             </a>
           </div>
