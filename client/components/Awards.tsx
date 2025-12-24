@@ -10,7 +10,7 @@ export default function Awards() {
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">
               Awards & Achievements
             </h2>
-            <div className="w-12 h-1 bg-blue-600 rounded-full"></div>
+            <div className="w-12 h-1 bg-green-600 rounded-full"></div>
           </div>
 
           {/* Award Card */}
