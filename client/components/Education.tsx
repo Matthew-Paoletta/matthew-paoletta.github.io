@@ -1,24 +1,44 @@
 export default function Education() {
-  const allCourses = [
-    { name: "Linear Algebra", type: "major" },
-    { name: "Java & C Programming", type: "major" },
-    { name: "Machine Learning", type: "major" },
-    { name: "Statistical Inference", type: "major" },
-    { name: "System Programming", type: "major" },
-    { name: "Software Tools", type: "major" },
-    { name: "Computational Theory", type: "major" },
-    { name: "Numerical Analysis", type: "major" },
-    { name: "Data Modeling", type: "minor" },
-    { name: "Python & Pandas", type: "minor" },
-    { name: "Data Science in Practice", type: "minor" },
-    { name: "Statistical Methods", type: "minor" },
-    { name: "Data Structures and Algorithms", type: "minor" },
+  const degrees = [
+    {
+      type: "Major",
+      name: "B.S. Mathematical Computer Science",
+      color: "from-blue-500 to-blue-600",
+      textColor: "text-blue-600",
+      bgColor: "bg-blue-50",
+      badgeColor: "bg-blue-600",
+      courses: [
+        "Linear Algebra",
+        "Java & C Programming",
+        "Machine Learning",
+        "Statistical Inference",
+        "System Programming",
+        "Software Tools",
+        "Computational Theory",
+        "Numerical Analysis",
+      ],
+    },
+    {
+      type: "Minor",
+      name: "Data Science Minor",
+      color: "from-yellow-400 to-yellow-500",
+      textColor: "text-yellow-600",
+      bgColor: "bg-yellow-50",
+      badgeColor: "bg-yellow-400",
+      courses: [
+        "Data Modeling",
+        "Python & Pandas",
+        "Data Science in Practice",
+        "Statistical Methods",
+        "Data Structures and Algorithms",
+      ],
+    },
   ];
 
   return (
     <section
       id="about"
-      className="py-16 sm:py-24 bg-white"
+      className="py-16 sm:py-24 bg-gradient-to-b from-white to-gray-50"
       data-section="education"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -31,109 +51,100 @@ export default function Education() {
             <div className="w-12 h-1 bg-blue-600 rounded-full"></div>
           </div>
 
-          {/* University Card */}
-          <div className="bg-gradient-to-br from-blue-50 to-yellow-50 rounded-2xl p-8 sm:p-10 border border-blue-200">
-            <div className="space-y-8">
-              {/* University Header */}
-              <div>
-                <h3 className="text-3xl font-bold text-gray-900 mb-2">
-                  University of California, San Diego
-                </h3>
-                <div className="flex flex-col sm:flex-row sm:items-center gap-4 text-gray-700">
-                  <span className="text-lg font-semibold">
-                    📍 San Diego, CA
-                  </span>
-                  <span className="text-lg font-semibold">
-                    🎓 Expected June 2026
-                  </span>
-                </div>
-              </div>
+          {/* University Intro */}
+          <div className="max-w-3xl">
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">
+              University of California, San Diego
+            </h3>
+            <p className="text-lg text-gray-700">
+              Pursuing a <span className="font-semibold text-blue-600">major in Mathematical Computer Science</span> and a <span className="font-semibold text-yellow-600">minor in Data Science</span> (Expected June 2026)
+            </p>
+          </div>
 
-              {/* Degrees Section */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pb-6 border-b border-blue-200">
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-white text-lg font-bold">①</span>
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-bold text-gray-900">
-                      B.S. Mathematical Computer Science
-                    </h4>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 bg-yellow-400 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-gray-900 text-lg font-bold">②</span>
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-bold text-gray-900">
-                      Data Science Minor
-                    </h4>
-                  </div>
-                </div>
-              </div>
+          {/* Degrees Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {degrees.map((degree, idx) => (
+              <div
+                key={idx}
+                className="relative group"
+              >
+                {/* Card */}
+                <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 border border-gray-200 flex flex-col h-full">
+                  {/* Colored Header */}
+                  <div
+                    className={`bg-gradient-to-r ${degree.color} p-6 sm:p-8 relative overflow-hidden`}
+                  >
+                    {/* Background decoration */}
+                    <div className="absolute top-0 right-0 w-40 h-40 bg-white opacity-10 rounded-full -mr-20 -mt-20"></div>
 
-              {/* Important Coursework */}
-              <div>
-                <h4 className="text-2xl font-bold text-gray-900 mb-6">
-                  Important Coursework
-                </h4>
-                <div className="space-y-4">
-                  {/* Major Courses */}
-                  <div>
-                    <div className="flex items-center gap-2 mb-3">
-                      <div className="w-3 h-3 bg-blue-600 rounded-full"></div>
-                      <p className="text-sm font-semibold text-gray-700">
-                        Mathematical Computer Science Track
-                      </p>
+                    <div className="relative z-10">
+                      <div className="flex items-center gap-3 mb-3">
+                        <span className="text-xs font-bold uppercase tracking-widest text-white opacity-90">
+                          {degree.type}
+                        </span>
+                        <div className="h-0.5 flex-1 bg-white opacity-30"></div>
+                      </div>
+                      <h3 className="text-2xl sm:text-3xl font-bold text-white">
+                        {degree.name}
+                      </h3>
                     </div>
-                    <div className="flex flex-wrap gap-2 ml-5">
-                      {allCourses
-                        .filter((course) => course.type === "major")
-                        .map((course, idx) => (
+                  </div>
+
+                  {/* Content */}
+                  <div className="p-6 sm:p-8 flex-1 flex flex-col">
+                    <div className="mb-6">
+                      <h4 className="text-sm font-semibold text-gray-600 uppercase tracking-wide mb-4">
+                        Relevant Courses
+                      </h4>
+                      <div className="flex flex-wrap gap-2">
+                        {degree.courses.map((course, courseIdx) => (
                           <span
-                            key={idx}
-                            className="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-200 transition"
+                            key={courseIdx}
+                            className={`${degree.bgColor} ${degree.textColor} px-3 py-1.5 rounded-full text-sm font-medium hover:shadow-md transition transform hover:scale-105`}
                           >
-                            {course.name}
+                            {course}
                           </span>
                         ))}
+                      </div>
                     </div>
-                  </div>
 
-                  {/* Minor Courses */}
-                  <div>
-                    <div className="flex items-center gap-2 mb-3">
-                      <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
-                      <p className="text-sm font-semibold text-gray-700">
-                        Data Science Minor Track
-                      </p>
-                    </div>
-                    <div className="flex flex-wrap gap-2 ml-5">
-                      {allCourses
-                        .filter((course) => course.type === "minor")
-                        .map((course, idx) => (
-                          <span
-                            key={idx}
-                            className="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-lg text-sm font-medium hover:bg-yellow-200 transition border border-yellow-300"
-                          >
-                            {course.name}
-                          </span>
-                        ))}
+                    {/* Course count */}
+                    <div className="mt-auto pt-6 border-t border-gray-200">
+                      <div className={`inline-flex items-center gap-2 ${degree.textColor} font-semibold`}>
+                        <span className="text-2xl font-bold">{degree.courses.length}</span>
+                        <span className="text-sm">
+                          course{degree.courses.length !== 1 ? "s" : ""}
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+            ))}
+          </div>
 
-              {/* Summary Stats */}
-              <div className="grid grid-cols-2 gap-4 pt-6 border-t border-blue-200">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600">13</div>
-                  <p className="text-sm text-gray-600 mt-1">Total Courses</p>
+          {/* Fun Stats */}
+          <div className="bg-gradient-to-r from-blue-600 via-blue-500 to-yellow-400 rounded-2xl p-8 sm:p-10 text-white relative overflow-hidden">
+            {/* Decorative elements */}
+            <div className="absolute top-0 right-0 w-48 h-48 bg-white opacity-5 rounded-full -mr-24 -mt-24"></div>
+            <div className="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-5 rounded-full -ml-24 -mb-24"></div>
+
+            <div className="relative z-10">
+              <h4 className="text-xl sm:text-2xl font-bold mb-6">
+                My UCSD Journey
+              </h4>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
+                <div>
+                  <div className="text-3xl sm:text-4xl font-bold">2</div>
+                  <p className="text-sm text-white text-opacity-90">Degrees</p>
                 </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600">2026</div>
-                  <p className="text-sm text-gray-600 mt-1">Target Graduation</p>
+                <div>
+                  <div className="text-3xl sm:text-4xl font-bold">13</div>
+                  <p className="text-sm text-white text-opacity-90">Key Courses</p>
+                </div>
+                <div>
+                  <div className="text-3xl sm:text-4xl font-bold">∞</div>
+                  <p className="text-sm text-white text-opacity-90">Possibilities</p>
                 </div>
               </div>
             </div>
