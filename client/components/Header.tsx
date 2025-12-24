@@ -19,16 +19,16 @@ export default function Header() {
               Education
             </a>
             <a
-              href="#experience"
-              className="text-gray-600 hover:text-gray-900 transition"
-            >
-              Experience
-            </a>
-            <a
               href="#projects"
               className="text-gray-600 hover:text-gray-900 transition"
             >
               Projects
+            </a>
+            <a
+              href="#experience"
+              className="text-gray-600 hover:text-gray-900 transition"
+            >
+              Experience
             </a>
             <a
               href="#leadership"
