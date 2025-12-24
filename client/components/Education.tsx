@@ -120,32 +120,6 @@ export default function Education() {
             ))}
           </div>
 
-          {/* Fun Stats */}
-          <div className="bg-gradient-to-r from-blue-600 via-blue-500 to-yellow-400 rounded-2xl p-8 sm:p-10 text-white relative overflow-hidden">
-            {/* Decorative elements */}
-            <div className="absolute top-0 right-0 w-48 h-48 bg-white opacity-5 rounded-full -mr-24 -mt-24"></div>
-            <div className="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-5 rounded-full -ml-24 -mb-24"></div>
-
-            <div className="relative z-10">
-              <h4 className="text-xl sm:text-2xl font-bold mb-6">
-                My UCSD Journey
-              </h4>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
-                <div>
-                  <div className="text-3xl sm:text-4xl font-bold">2</div>
-                  <p className="text-sm text-white text-opacity-90">Degrees</p>
-                </div>
-                <div>
-                  <div className="text-3xl sm:text-4xl font-bold">13</div>
-                  <p className="text-sm text-white text-opacity-90">Key Courses</p>
-                </div>
-                <div>
-                  <div className="text-3xl sm:text-4xl font-bold">∞</div>
-                  <p className="text-sm text-white text-opacity-90">Possibilities</p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
