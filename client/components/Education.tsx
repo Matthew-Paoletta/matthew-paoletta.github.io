@@ -52,13 +52,19 @@ export default function Education() {
           </div>
 
           {/* University Intro */}
-          <div className="max-w-3xl">
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">
-              University of California, San Diego
-            </h3>
-            <p className="text-lg text-gray-700">
-              Pursuing a <span className="font-semibold text-blue-600">major in Mathematical Computer Science</span> and a <span className="font-semibold text-yellow-600">minor in Data Science</span> (Expected June 2026)
-            </p>
+          <div className="bg-gradient-to-r from-blue-600 via-blue-500 to-yellow-400 rounded-2xl p-8 sm:p-10 text-white relative overflow-hidden">
+            {/* Decorative elements */}
+            <div className="absolute top-0 right-0 w-48 h-48 bg-white opacity-5 rounded-full -mr-24 -mt-24"></div>
+            <div className="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-5 rounded-full -ml-24 -mb-24"></div>
+
+            <div className="relative z-10">
+              <h3 className="text-3xl sm:text-4xl font-bold mb-4">
+                University of California, San Diego
+              </h3>
+              <p className="text-lg text-white text-opacity-95 leading-relaxed max-w-3xl">
+                I've been attending UCSD since 2022, pursuing a <span className="font-semibold">major in Mathematical Computer Science</span> and a <span className="font-semibold">minor in Data Science</span>. Expected to graduate in June 2026.
+              </p>
+            </div>
           </div>
 
           {/* Degrees Grid */}
