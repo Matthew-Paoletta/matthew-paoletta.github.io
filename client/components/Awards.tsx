@@ -14,7 +14,7 @@ export default function Awards() {
           </div>
 
           {/* Award Card */}
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 sm:p-10 border border-blue-200">
+          <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-8 sm:p-10 border border-green-200">
             <div className="flex flex-col sm:flex-row gap-6">
               {/* Icon */}
               <div className="flex-shrink-0">
