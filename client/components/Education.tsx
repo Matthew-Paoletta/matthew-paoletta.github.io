@@ -34,7 +34,7 @@ export default function Education() {
           </div>
 
           {/* University Card */}
-          <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 sm:p-10 border border-green-200">
+          <div className="bg-gradient-to-br from-blue-50 to-yellow-50 rounded-2xl p-8 sm:p-10 border border-blue-200">
             <div className="space-y-8">
               {/* University Header */}
               <div>
