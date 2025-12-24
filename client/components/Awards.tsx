@@ -63,21 +63,21 @@ export default function Awards() {
                 </div>
 
                 {/* Stats */}
-                <div className="grid grid-cols-3 gap-4 pt-4 border-t border-blue-200">
+                <div className="grid grid-cols-3 gap-4 pt-4 border-t border-green-200">
                   <div className="text-center">
-                    <div className="text-2xl sm:text-3xl font-bold text-blue-600">
+                    <div className="text-2xl sm:text-3xl font-bold text-green-600">
                       4.75
                     </div>
                     <p className="text-sm text-gray-600">GPA</p>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl sm:text-3xl font-bold text-blue-600">
+                    <div className="text-2xl sm:text-3xl font-bold text-green-600">
                       504
                     </div>
                     <p className="text-sm text-gray-600">Class Size</p>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl sm:text-3xl font-bold text-blue-600">
+                    <div className="text-2xl sm:text-3xl font-bold text-green-600">
                       54
                     </div>
                     <p className="text-sm text-gray-600">College Credits</p>
