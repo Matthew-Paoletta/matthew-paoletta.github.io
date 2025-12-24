@@ -1,29 +1,19 @@
 export default function Education() {
-  const coursesByTrack = {
-    major: {
-      title: "Mathematical Computer Science",
-      courses: [
-        "Linear Algebra",
-        "Java & C Programming",
-        "Machine Learning",
-        "Statistical Inference",
-        "System Programming",
-        "Software Tools",
-        "Computational Theory",
-        "Numerical Analysis",
-      ],
-    },
-    minor: {
-      title: "Data Science Minor",
-      courses: [
-        "Data Modeling",
-        "Python & Pandas",
-        "Data Science in Practice",
-        "Statistical Methods",
-        "Data Structures and Algorithms",
-      ],
-    },
-  };
+  const allCourses = [
+    { name: "Linear Algebra", type: "major" },
+    { name: "Java & C Programming", type: "major" },
+    { name: "Machine Learning", type: "major" },
+    { name: "Statistical Inference", type: "major" },
+    { name: "System Programming", type: "major" },
+    { name: "Software Tools", type: "major" },
+    { name: "Computational Theory", type: "major" },
+    { name: "Numerical Analysis", type: "major" },
+    { name: "Data Modeling", type: "minor" },
+    { name: "Python & Pandas", type: "minor" },
+    { name: "Data Science in Practice", type: "minor" },
+    { name: "Statistical Methods", type: "minor" },
+    { name: "Data Structures and Algorithms", type: "minor" },
+  ];
 
   return (
     <section
