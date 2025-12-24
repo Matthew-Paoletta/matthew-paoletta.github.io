@@ -49,78 +49,91 @@ export default function Education() {
                 </div>
               </div>
 
-              {/* Curriculum Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {/* Major */}
-                <div className="bg-white rounded-xl p-6 shadow-sm border-l-4 border-blue-600">
-                  <div className="space-y-4">
-                    <div>
-                      <h4 className="text-2xl font-bold text-blue-600 mb-1">
-                        B.S. {coursesByTrack.major.title}
-                      </h4>
-                      <p className="text-sm text-gray-600">Primary Focus</p>
-                    </div>
-
-                    <div>
-                      <p className="text-sm font-semibold text-gray-700 mb-3">
-                        Core Coursework
-                      </p>
-                      <div className="flex flex-wrap gap-2">
-                        {coursesByTrack.major.courses.map((course, idx) => (
-                          <span
-                            key={idx}
-                            className="bg-blue-100 text-blue-700 px-3 py-1.5 rounded-lg text-xs font-medium hover:bg-blue-200 transition"
-                          >
-                            {course}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
+              {/* Degrees Section */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pb-6 border-b border-blue-200">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="text-white text-lg font-bold">①</span>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-bold text-gray-900">
+                      B.S. Mathematical Computer Science
+                    </h4>
                   </div>
                 </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 bg-yellow-400 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="text-gray-900 text-lg font-bold">②</span>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-bold text-gray-900">
+                      Data Science Minor
+                    </h4>
+                  </div>
+                </div>
+              </div>
 
-                {/* Minor */}
-                <div className="bg-white rounded-xl p-6 shadow-sm border-l-4 border-yellow-500">
-                  <div className="space-y-4">
-                    <div>
-                      <h4 className="text-2xl font-bold text-yellow-600 mb-1">
-                        {coursesByTrack.minor.title}
-                      </h4>
-                      <p className="text-sm text-gray-600">Specialization</p>
-                    </div>
-
-                    <div>
-                      <p className="text-sm font-semibold text-gray-700 mb-3">
-                        Focus Areas
+              {/* Important Coursework */}
+              <div>
+                <h4 className="text-2xl font-bold text-gray-900 mb-6">
+                  Important Coursework
+                </h4>
+                <div className="space-y-4">
+                  {/* Major Courses */}
+                  <div>
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="w-3 h-3 bg-blue-600 rounded-full"></div>
+                      <p className="text-sm font-semibold text-gray-700">
+                        Mathematical Computer Science Track
                       </p>
-                      <div className="flex flex-wrap gap-2">
-                        {coursesByTrack.minor.courses.map((course, idx) => (
+                    </div>
+                    <div className="flex flex-wrap gap-2 ml-5">
+                      {allCourses
+                        .filter((course) => course.type === "major")
+                        .map((course, idx) => (
                           <span
                             key={idx}
-                            className="bg-yellow-100 text-yellow-700 px-3 py-1.5 rounded-lg text-xs font-medium hover:bg-yellow-200 transition"
+                            className="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-200 transition"
                           >
-                            {course}
+                            {course.name}
                           </span>
                         ))}
-                      </div>
+                    </div>
+                  </div>
+
+                  {/* Minor Courses */}
+                  <div>
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
+                      <p className="text-sm font-semibold text-gray-700">
+                        Data Science Minor Track
+                      </p>
+                    </div>
+                    <div className="flex flex-wrap gap-2 ml-5">
+                      {allCourses
+                        .filter((course) => course.type === "minor")
+                        .map((course, idx) => (
+                          <span
+                            key={idx}
+                            className="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-lg text-sm font-medium hover:bg-yellow-200 transition border border-yellow-300"
+                          >
+                            {course.name}
+                          </span>
+                        ))}
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Stats Bar */}
-              <div className="grid grid-cols-3 gap-4 pt-6 border-t border-blue-200">
+              {/* Summary Stats */}
+              <div className="grid grid-cols-2 gap-4 pt-6 border-t border-blue-200">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600">8</div>
-                  <p className="text-sm text-gray-600 mt-1">Major Courses</p>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-yellow-600">5</div>
-                  <p className="text-sm text-gray-600 mt-1">Minor Courses</p>
+                  <div className="text-3xl font-bold text-blue-600">13</div>
+                  <p className="text-sm text-gray-600 mt-1">Total Courses</p>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-blue-600">2026</div>
-                  <p className="text-sm text-gray-600 mt-1">Target Grad</p>
+                  <p className="text-sm text-gray-600 mt-1">Target Graduation</p>
                 </div>
               </div>
             </div>
