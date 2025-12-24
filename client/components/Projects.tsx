@@ -82,7 +82,7 @@ export default function Projects() {
                   <div className="space-y-3">
                     {project.highlights.map((highlight, hIndex) => (
                       <div key={hIndex} className="flex gap-3">
-                        <span className="text-blue-600 font-bold mt-1 flex-shrink-0">
+                        <span className="text-green-600 font-bold mt-1 flex-shrink-0">
                           •
                         </span>
                         <p className="text-gray-700">{highlight}</p>
