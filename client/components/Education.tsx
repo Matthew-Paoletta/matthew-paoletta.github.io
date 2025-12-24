@@ -54,10 +54,10 @@ export default function Education() {
               {/* Curriculum Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Major */}
-                <div className="bg-white rounded-xl p-6 shadow-sm border-l-4 border-green-600">
+                <div className="bg-white rounded-xl p-6 shadow-sm border-l-4 border-blue-600">
                   <div className="space-y-4">
                     <div>
-                      <h4 className="text-2xl font-bold text-green-600 mb-1">
+                      <h4 className="text-2xl font-bold text-blue-600 mb-1">
                         B.S. {coursesByTrack.major.title}
                       </h4>
                       <p className="text-sm text-gray-600">Primary Focus</p>
@@ -71,7 +71,7 @@ export default function Education() {
                         {coursesByTrack.major.courses.map((course, idx) => (
                           <span
                             key={idx}
-                            className="bg-green-100 text-green-700 px-3 py-1.5 rounded-lg text-xs font-medium hover:bg-green-200 transition"
+                            className="bg-blue-100 text-blue-700 px-3 py-1.5 rounded-lg text-xs font-medium hover:bg-blue-200 transition"
                           >
                             {course}
                           </span>
