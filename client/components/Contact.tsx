@@ -19,12 +19,12 @@ export default function Contact() {
             {/* Email */}
             <div className="text-center space-y-3">
               <div className="flex justify-center">
-                <Mail className="w-8 h-8 text-blue-400" />
+                <Mail className="w-8 h-8 text-green-400" />
               </div>
               <h3 className="font-semibold text-lg">Email</h3>
               <a
                 href="mailto:matthew.paoletta73@gmail.com"
-                className="text-gray-400 hover:text-blue-400 transition"
+                className="text-gray-400 hover:text-green-400 transition"
               >
                 matthew.paoletta73@gmail.com
               </a>
@@ -33,12 +33,12 @@ export default function Contact() {
             {/* Phone */}
             <div className="text-center space-y-3">
               <div className="flex justify-center">
-                <Phone className="w-8 h-8 text-blue-400" />
+                <Phone className="w-8 h-8 text-green-400" />
               </div>
               <h3 className="font-semibold text-lg">Phone</h3>
               <a
                 href="tel:+17605742440"
-                className="text-gray-400 hover:text-blue-400 transition"
+                className="text-gray-400 hover:text-green-400 transition"
               >
                 (760) 574-2440
               </a>
@@ -47,7 +47,7 @@ export default function Contact() {
             {/* Location */}
             <div className="text-center space-y-3">
               <div className="flex justify-center">
-                <MapPin className="w-8 h-8 text-blue-400" />
+                <MapPin className="w-8 h-8 text-green-400" />
               </div>
               <h3 className="font-semibold text-lg">Location</h3>
               <p className="text-gray-400">San Diego, CA</p>
@@ -65,7 +65,7 @@ export default function Contact() {
                   href="https://github.com/Matthew-Paoletta"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-blue-400 transition flex items-center gap-2"
+                  className="text-gray-400 hover:text-green-400 transition flex items-center gap-2"
                 >
                   <Github className="w-6 h-6" />
                   <span className="hidden sm:inline">GitHub</span>
@@ -74,7 +74,7 @@ export default function Contact() {
                   href="https://www.linkedin.com/in/matthew-paoletta-b13738299/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-blue-400 transition flex items-center gap-2"
+                  className="text-gray-400 hover:text-green-400 transition flex items-center gap-2"
                 >
                   <Linkedin className="w-6 h-6" />
                   <span className="hidden sm:inline">LinkedIn</span>
