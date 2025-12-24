@@ -121,11 +121,11 @@ export default function Education() {
               {/* Stats Bar */}
               <div className="grid grid-cols-3 gap-4 pt-6 border-t border-blue-200">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600">6</div>
+                  <div className="text-3xl font-bold text-blue-600">8</div>
                   <p className="text-sm text-gray-600 mt-1">Major Courses</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-yellow-600">3</div>
+                  <div className="text-3xl font-bold text-yellow-600">5</div>
                   <p className="text-sm text-gray-600 mt-1">Minor Courses</p>
                 </div>
                 <div className="text-center">
