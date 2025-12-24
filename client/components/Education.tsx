@@ -4,16 +4,24 @@ export default function Education() {
       title: "Mathematical Computer Science",
       courses: [
         "Linear Algebra",
-        "Data Structures",
         "Java & C Programming",
         "Machine Learning",
-        "Statistical Methods",
         "Statistical Inference",
+        "System Programming",
+        "Software Tools",
+        "Computational Theory",
+        "Numerical Analysis",
       ],
     },
     minor: {
       title: "Data Science Minor",
-      courses: ["Data Modeling", "Python & Pandas", "Data Science in Practice"],
+      courses: [
+        "Data Modeling",
+        "Python & Pandas",
+        "Data Science in Practice",
+        "Statistical Methods",
+        "Data Structures and Algorithms",
+      ],
     },
   };
 
