@@ -29,7 +29,7 @@ export default function Awards() {
                   <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
                     Valedictorian
                   </h3>
-                  <p className="text-blue-600 font-semibold text-lg">
+                  <p className="text-green-600 font-semibold text-lg">
                     Shadow Hills High School, Indio, CA
                   </p>
                   <p className="text-sm text-gray-600 mt-1">
