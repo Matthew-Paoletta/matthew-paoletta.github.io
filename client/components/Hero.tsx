@@ -17,7 +17,17 @@ export default function Hero() {
             </div>
 
             <p className="text-lg text-gray-700 leading-relaxed max-w-lg">
-              I build software that solves real problems. From developing a <span className="font-semibold">Chrome extension helping students manage deadlines</span> to <span className="font-semibold">analyzing performance metrics to predict postseason success</span>, I combine technical depth with practical impact. UCSD Mathematics & Computer Science student passionate about creating elegant solutions to complex challenges.
+              I build software that solves real problems. From developing a{" "}
+              <span className="font-semibold">
+                Chrome extension helping students manage deadlines
+              </span>{" "}
+              to{" "}
+              <span className="font-semibold">
+                analyzing performance metrics to predict postseason success
+              </span>
+              , I combine technical depth with practical impact. UCSD
+              Mathematics & Computer Science student passionate about creating
+              elegant solutions to complex challenges.
             </p>
 
             {/* Key Skills/Highlights */}
@@ -25,15 +35,21 @@ export default function Hero() {
               <div className="flex gap-3 items-start">
                 <Code2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="font-semibold text-gray-900">Full-Stack Development</p>
-                  <p className="text-sm text-gray-600">JavaScript, Python, Java</p>
+                  <p className="font-semibold text-gray-900">
+                    Full-Stack Development
+                  </p>
+                  <p className="text-sm text-gray-600">
+                    JavaScript, Python, Java
+                  </p>
                 </div>
               </div>
               <div className="flex gap-3 items-start">
                 <Zap className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-semibold text-gray-900">Problem Solving</p>
-                  <p className="text-sm text-gray-600">Data analysis & optimization</p>
+                  <p className="text-sm text-gray-600">
+                    Data analysis & optimization
+                  </p>
                 </div>
               </div>
               <div className="flex gap-3 items-start">

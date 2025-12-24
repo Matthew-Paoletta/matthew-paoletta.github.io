@@ -62,7 +62,13 @@ export default function Education() {
                 University of California, San Diego
               </h3>
               <p className="text-lg text-white text-opacity-95 leading-relaxed max-w-3xl">
-                I've been attending UCSD since 2022, pursuing a <span className="font-semibold">major in Mathematical Computer Science</span> and a <span className="font-semibold">minor in Data Science</span>. Expected to graduate in June 2026.
+                I've been attending UCSD since 2022, pursuing a{" "}
+                <span className="font-semibold">
+                  major in Mathematical Computer Science
+                </span>{" "}
+                and a{" "}
+                <span className="font-semibold">minor in Data Science</span>.
+                Expected to graduate in June 2026.
               </p>
             </div>
           </div>
@@ -70,10 +76,7 @@ export default function Education() {
           {/* Degrees Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {degrees.map((degree, idx) => (
-              <div
-                key={idx}
-                className="relative group"
-              >
+              <div key={idx} className="relative group">
                 {/* Card */}
                 <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 border border-gray-200 flex flex-col h-full">
                   {/* Colored Header */}
@@ -113,13 +116,11 @@ export default function Education() {
                         ))}
                       </div>
                     </div>
-
                   </div>
                 </div>
               </div>
             ))}
           </div>
-
         </div>
       </div>
     </section>
