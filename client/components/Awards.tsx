@@ -18,7 +18,7 @@ export default function Awards() {
             <div className="flex flex-col sm:flex-row gap-6">
               {/* Icon */}
               <div className="flex-shrink-0">
-                <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center">
+                <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center">
                   <Award className="w-8 h-8 text-white" />
                 </div>
               </div>
