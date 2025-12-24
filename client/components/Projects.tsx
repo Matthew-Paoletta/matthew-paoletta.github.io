@@ -72,7 +72,7 @@ export default function Projects() {
                         {project.date}
                       </span>
                     </div>
-                    <p className="text-lg text-blue-600 font-medium mb-3">
+                    <p className="text-lg text-green-600 font-medium mb-3">
                       {project.subtitle}
                     </p>
                     <p className="text-gray-700">{project.description}</p>
