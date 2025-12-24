@@ -89,7 +89,7 @@ export default function Hero() {
 
       {/* Scroll Indicator */}
       <div className="flex justify-center mt-12 animate-bounce">
-        <ArrowDown className="w-6 h-6 text-blue-600" />
+        <ArrowDown className="w-6 h-6 text-green-600" />
       </div>
     </section>
   );
