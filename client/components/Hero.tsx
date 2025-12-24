@@ -92,13 +92,27 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right: Photo */}
-          <div className="flex justify-center md:justify-end order-1 md:order-2">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fb779523732e04751a10e9de1b694bad3%2Ff1195e21dbc242de88ab0834e5ab3ee5?format=webp&width=800"
-              alt="Matthew Vincent Paoletta"
-              className="w-64 h-64 sm:w-72 sm:h-72 rounded-2xl object-cover shadow-lg"
-            />
+          {/* Right: Photo with Background */}
+          <div className="flex justify-center md:justify-end order-1 md:order-2 relative">
+            {/* Background gradient blob */}
+            <div className="absolute inset-0 flex justify-center items-center">
+              <div className="w-80 h-80 sm:w-96 sm:h-96 md:w-full md:h-full bg-gradient-to-br from-green-200 via-blue-200 to-purple-200 rounded-full blur-3xl opacity-40 absolute"></div>
+            </div>
+
+            {/* Decorative rings */}
+            <div className="absolute inset-0 flex justify-center items-center">
+              <div className="w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 border-2 border-green-300 rounded-full opacity-30 absolute"></div>
+              <div className="w-80 h-80 sm:w-96 sm:h-96 md:w-full md:max-w-md border-2 border-blue-300 rounded-full opacity-20 absolute"></div>
+            </div>
+
+            {/* Photo */}
+            <div className="relative z-10">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fb779523732e04751a10e9de1b694bad3%2Ff1195e21dbc242de88ab0834e5ab3ee5?format=webp&width=800"
+                alt="Matthew Vincent Paoletta"
+                className="w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-3xl object-cover shadow-2xl border-4 border-white hover:shadow-3xl transition-shadow duration-300"
+              />
+            </div>
           </div>
         </div>
       </div>
