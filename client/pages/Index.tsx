@@ -13,8 +13,8 @@ export default function Index() {
       <Header />
       <Hero />
       <Education />
-      <Experience />
       <Projects />
+      <Experience />
       <Leadership />
       <Skills />
       <Contact />
