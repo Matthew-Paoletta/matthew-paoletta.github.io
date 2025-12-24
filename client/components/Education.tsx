@@ -114,15 +114,6 @@ export default function Education() {
                       </div>
                     </div>
 
-                    {/* Course count */}
-                    <div className="mt-auto pt-6 border-t border-gray-200">
-                      <div className={`inline-flex items-center gap-2 ${degree.textColor} font-semibold`}>
-                        <span className="text-2xl font-bold">{degree.courses.length}</span>
-                        <span className="text-sm">
-                          course{degree.courses.length !== 1 ? "s" : ""}
-                        </span>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
