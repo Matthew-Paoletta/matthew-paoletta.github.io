@@ -15,7 +15,7 @@ export default function Contact() {
           </div>
 
           {/* Contact Information */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
             {/* Email */}
             <div className="text-center space-y-3">
               <div className="flex justify-center">
@@ -27,20 +27,6 @@ export default function Contact() {
                 className="text-gray-400 hover:text-green-400 transition"
               >
                 matthew.paoletta73@gmail.com
-              </a>
-            </div>
-
-            {/* Phone */}
-            <div className="text-center space-y-3">
-              <div className="flex justify-center">
-                <Phone className="w-8 h-8 text-green-400" />
-              </div>
-              <h3 className="font-semibold text-lg">Phone</h3>
-              <a
-                href="tel:+17605742440"
-                className="text-gray-400 hover:text-green-400 transition"
-              >
-                (760) 574-2440
               </a>
             </div>
 
