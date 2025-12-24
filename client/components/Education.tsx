@@ -82,10 +82,10 @@ export default function Education() {
                 </div>
 
                 {/* Minor */}
-                <div className="bg-white rounded-xl p-6 shadow-sm border-l-4 border-purple-500">
+                <div className="bg-white rounded-xl p-6 shadow-sm border-l-4 border-yellow-500">
                   <div className="space-y-4">
                     <div>
-                      <h4 className="text-2xl font-bold text-purple-600 mb-1">
+                      <h4 className="text-2xl font-bold text-yellow-600 mb-1">
                         {coursesByTrack.minor.title}
                       </h4>
                       <p className="text-sm text-gray-600">Specialization</p>
@@ -99,7 +99,7 @@ export default function Education() {
                         {coursesByTrack.minor.courses.map((course, idx) => (
                           <span
                             key={idx}
-                            className="bg-purple-100 text-purple-700 px-3 py-1.5 rounded-lg text-xs font-medium hover:bg-purple-200 transition"
+                            className="bg-yellow-100 text-yellow-700 px-3 py-1.5 rounded-lg text-xs font-medium hover:bg-yellow-200 transition"
                           >
                             {course}
                           </span>
