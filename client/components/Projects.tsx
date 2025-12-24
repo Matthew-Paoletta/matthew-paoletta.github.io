@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from "lucide-react";
+import { Github, Code2, Database, BarChart3 } from "lucide-react";
 
 export default function Projects() {
   const projects = [
@@ -6,6 +6,8 @@ export default function Projects() {
       title: "Getting It Done",
       subtitle: "Academic Productivity Chrome Extension",
       date: "Personal Project",
+      icon: Code2,
+      color: "from-green-500 to-emerald-600",
       description:
         "A Chrome extension using JavaScript to help college students centralize their academic information and manage deadlines efficiently.",
       highlights: [
@@ -21,6 +23,8 @@ export default function Projects() {
       title: "Playoff Win Predictor",
       subtitle: "Data Analysis Project",
       date: "Personal Project",
+      icon: BarChart3,
+      color: "from-blue-500 to-cyan-600",
       description:
         "Statistical analysis of baseball datasets to identify performance metrics that correlate with postseason success.",
       highlights: [
@@ -41,7 +45,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="py-16 sm:py-24 bg-white"
+      className="py-16 sm:py-24 bg-gradient-to-b from-gray-50 to-white"
       data-section="projects"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -49,74 +53,99 @@ export default function Projects() {
           {/* Section Header */}
           <div>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">
-              Projects
+              Featured Projects
             </h2>
             <div className="w-12 h-1 bg-green-600 rounded-full"></div>
           </div>
 
           {/* Projects Grid */}
-          <div className="space-y-8">
-            {projects.map((project, index) => (
-              <div
-                key={index}
-                className="border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition duration-300"
-              >
-                <div className="p-6 sm:p-8 space-y-6">
-                  {/* Project Header */}
-                  <div>
-                    <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 mb-2">
-                      <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
-                        {project.title}
-                      </h3>
-                      <span className="text-sm text-gray-500 font-medium">
-                        {project.date}
-                      </span>
-                    </div>
-                    <p className="text-lg text-green-600 font-medium mb-3">
-                      {project.subtitle}
-                    </p>
-                    <p className="text-gray-700">{project.description}</p>
-                  </div>
-
-                  {/* Highlights */}
-                  <div className="space-y-3">
-                    {project.highlights.map((highlight, hIndex) => (
-                      <div key={hIndex} className="flex gap-3">
-                        <span className="text-green-600 font-bold mt-1 flex-shrink-0">
-                          •
-                        </span>
-                        <p className="text-gray-700">{highlight}</p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {projects.map((project, index) => {
+              const IconComponent = project.icon;
+              return (
+                <div
+                  key={index}
+                  className="group relative rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-2xl transition duration-300 flex flex-col"
+                >
+                  {/* Colored Header Section */}
+                  <div
+                    className={`bg-gradient-to-r ${project.color} p-8 sm:p-10 flex items-center justify-between relative overflow-hidden`}
+                  >
+                    <div className="flex-1 relative z-10">
+                      <div className="flex items-baseline gap-3 mb-2">
+                        <h3 className="text-2xl sm:text-3xl font-bold text-white">
+                          {project.title}
+                        </h3>
                       </div>
-                    ))}
+                      <p className="text-green-100 font-medium text-sm">
+                        {project.subtitle}
+                      </p>
+                    </div>
+                    <div className="relative z-10 ml-4">
+                      <div className="w-14 h-14 bg-white bg-opacity-20 rounded-xl flex items-center justify-center">
+                        <IconComponent className="w-7 h-7 text-white" />
+                      </div>
+                    </div>
+                    {/* Background decoration */}
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-white opacity-5 rounded-full -mr-16 -mt-16"></div>
                   </div>
 
-                  {/* Technologies */}
-                  <div className="flex flex-wrap gap-2 pt-4 border-t border-gray-200">
-                    {project.technologies.map((tech, tIndex) => (
-                      <span
-                        key={tIndex}
-                        className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium"
+                  {/* Content Section */}
+                  <div className="flex-1 p-6 sm:p-8 flex flex-col gap-6">
+                    {/* Project Info */}
+                    <div>
+                      <div className="flex items-center justify-between mb-3">
+                        <span className="text-xs font-semibold text-green-600 uppercase tracking-wide">
+                          {project.date}
+                        </span>
+                      </div>
+                      <p className="text-gray-700 leading-relaxed">
+                        {project.description}
+                      </p>
+                    </div>
+
+                    {/* Highlights */}
+                    <div className="space-y-2.5">
+                      {project.highlights.map((highlight, hIndex) => (
+                        <div key={hIndex} className="flex gap-3">
+                          <span className="text-green-600 font-bold mt-0.5 flex-shrink-0 text-lg">
+                            ✓
+                          </span>
+                          <p className="text-gray-700 text-sm leading-relaxed">
+                            {highlight}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Technologies */}
+                    <div className="flex flex-wrap gap-2 pt-4 border-t border-gray-200">
+                      {project.technologies.map((tech, tIndex) => (
+                        <span
+                          key={tIndex}
+                          className="bg-green-50 text-green-700 px-3 py-1.5 rounded-lg text-xs font-medium border border-green-200 hover:bg-green-100 transition"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+
+                    {/* Links */}
+                    <div className="pt-4 border-t border-gray-200">
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2.5 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition transform hover:scale-105"
                       >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-
-                  {/* Links */}
-                  <div className="flex gap-4 pt-4">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-medium transition"
-                    >
-                      <Github className="w-5 h-5" />
-                      View on GitHub
-                    </a>
+                        <Github className="w-5 h-5" />
+                        View on GitHub
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>
