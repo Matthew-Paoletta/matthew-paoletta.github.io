@@ -20,7 +20,9 @@ Your portfolio is now configured to deploy to `matthew-paoletta.github.io` autom
 ## How to Deploy:
 
 ### Option 1: Automatic Deployment (Recommended)
+
 Simply push to the `main` branch:
+
 ```bash
 git add .
 git commit -m "Update portfolio"
@@ -28,12 +30,15 @@ git push origin main
 ```
 
 The GitHub Actions workflow will automatically:
+
 - Build your site
 - Deploy to GitHub Pages
 - Your site will be live at `https://matthew-paoletta.github.io`
 
 ### Option 2: Manual Deployment
+
 If you need to build locally:
+
 ```bash
 # Install dependencies
 pnpm install
@@ -48,16 +53,19 @@ pnpm run build:client
 ## GitHub Pages Settings:
 
 Your repository should have these settings:
+
 - **Branch:** main (workflow will deploy to gh-pages automatically)
 - **Folder:** / (root of gh-pages branch)
 - **CNAME:** (optional, only if using a custom domain)
 
 ## Site URL:
+
 - https://matthew-paoletta.github.io
 
 ## Troubleshooting:
 
 ### Site not updating?
+
 1. Check the "Actions" tab in your GitHub repository
 2. Look for the "Deploy to GitHub Pages" workflow
 3. Click the latest run to see build logs
@@ -67,10 +75,12 @@ Your repository should have these settings:
    - Hard refresh your browser: Ctrl+Shift+R (Windows/Linux) or Cmd+Shift+R (Mac)
 
 ### 404 errors on refresh?
+
 - This is a React Router issue. The workflow and config handle this with GitHub Pages configuration.
 - Ensure `.nojekyll` file exists in the dist/spa folder after build
 
 ### Custom domain?
+
 1. Add a CNAME file with your domain in the `public/` folder
 2. Configure DNS settings with your domain provider
 3. Update repository settings under "Pages"
@@ -78,6 +88,7 @@ Your repository should have these settings:
 ## Rollback:
 
 If something breaks:
+
 1. Go to repository "Actions" tab
 2. Find the failed workflow
 3. Check the error logs
