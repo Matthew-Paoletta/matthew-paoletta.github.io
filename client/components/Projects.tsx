@@ -152,7 +152,9 @@ export default function Projects() {
                     {/* Project Info */}
                     <div>
                       <div className="flex items-center justify-between mb-3">
-                        <span className={`text-xs font-semibold ${colors.textDark} uppercase tracking-wide`}>
+                        <span
+                          className={`text-xs font-semibold ${colors.textDark} uppercase tracking-wide`}
+                        >
                           {project.date}
                         </span>
                       </div>
@@ -165,7 +167,9 @@ export default function Projects() {
                     <div className="space-y-2.5">
                       {project.highlights.map((highlight, hIndex) => (
                         <div key={hIndex} className="flex gap-3">
-                          <span className={`${colors.textDark} font-bold mt-0.5 flex-shrink-0 text-lg`}>
+                          <span
+                            className={`${colors.textDark} font-bold mt-0.5 flex-shrink-0 text-lg`}
+                          >
                             ✓
                           </span>
                           <p className="text-gray-700 text-sm leading-relaxed">
