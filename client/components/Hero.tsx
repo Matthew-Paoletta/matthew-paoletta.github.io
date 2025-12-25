@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="pt-12 sm:pt-20 pb-12 sm:pb-20 bg-gradient-to-br from-blue-50 via-white to-green-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 lg:gap-12 items-start">
           {/* Left: Text Content - 2/5 columns */}
           <div className="md:col-span-2 space-y-8 order-2 md:order-1">
             <div>
