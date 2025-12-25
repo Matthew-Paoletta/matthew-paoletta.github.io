@@ -8,7 +8,7 @@ export default function Hero() {
           {/* Left: Text Content - 2/5 columns */}
           <div className="md:col-span-2 space-y-8 order-2 md:order-1">
             <div>
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight whitespace-nowrap">
                 Matthew <span className="text-green-600">Paoletta</span>
               </h1>
               <p className="text-2xl sm:text-3xl text-green-600 font-semibold mt-4">
