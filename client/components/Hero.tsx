@@ -38,24 +38,24 @@ export default function Hero() {
                   <p className="font-semibold text-gray-900 text-lg">
                     Full-Stack Development
                   </p>
-                  <p className="text-gray-600">
-                    JavaScript, Python, Java
-                  </p>
+                  <p className="text-gray-600">JavaScript, Python, Java</p>
                 </div>
               </div>
               <div className="flex gap-4 items-start">
                 <Zap className="w-6 h-6 text-green-600 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="font-semibold text-gray-900 text-lg">Problem Solving</p>
-                  <p className="text-gray-600">
-                    Data analysis & optimization
+                  <p className="font-semibold text-gray-900 text-lg">
+                    Problem Solving
                   </p>
+                  <p className="text-gray-600">Data analysis & optimization</p>
                 </div>
               </div>
               <div className="flex gap-4 items-start">
                 <Target className="w-6 h-6 text-green-600 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="font-semibold text-gray-900 text-lg">Impact Driven</p>
+                  <p className="font-semibold text-gray-900 text-lg">
+                    Impact Driven
+                  </p>
                   <p className="text-gray-600">Real-world solutions</p>
                 </div>
               </div>
