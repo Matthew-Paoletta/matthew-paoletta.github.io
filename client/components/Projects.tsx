@@ -1,4 +1,4 @@
-import { Github, Code2, Database, BarChart3 } from "lucide-react";
+import { Github, Code2, Database, BarChart3, Lightbulb } from "lucide-react";
 
 export default function Projects() {
   const projects = [
@@ -8,6 +8,7 @@ export default function Projects() {
       date: "Personal Project",
       icon: Code2,
       color: "from-green-500 to-emerald-600",
+      accentColor: "green",
       description:
         "A Chrome extension using JavaScript to help college students centralize their academic information and manage deadlines efficiently.",
       highlights: [
@@ -24,7 +25,8 @@ export default function Projects() {
       subtitle: "Data Analysis Project",
       date: "Personal Project",
       icon: BarChart3,
-      color: "from-blue-500 to-cyan-600",
+      color: "from-blue-600 to-blue-700",
+      accentColor: "blue",
       description:
         "Statistical analysis of baseball datasets to identify performance metrics that correlate with postseason success.",
       highlights: [
@@ -40,7 +42,61 @@ export default function Projects() {
       ],
       github: "https://github.com/Matthew-Paoletta",
     },
+    {
+      title: "Factors of Collaboration",
+      subtitle: "Music Artist Collaboration Prediction",
+      date: "Class Project - Winter 2025",
+      icon: Lightbulb,
+      color: "from-purple-500 to-purple-700",
+      accentColor: "purple",
+      description:
+        "A data science project analyzing which factors most strongly predict music artist collaborations. Framed as a binary classification problem using artist popularity, background, and audio features.",
+      highlights: [
+        "Built a binary classification model to predict music artist collaborations based on multiple feature sets",
+        "Analyzed artist popularity metrics, background information, and audio characteristics to identify key collaboration predictors",
+        "Implemented feature engineering and selection techniques to optimize model performance",
+        "Developed comprehensive visualizations and statistical analysis to communicate findings and insights from the data",
+      ],
+      technologies: [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "Scikit-learn",
+        "Jupyter Notebook",
+      ],
+      github: "https://github.com/Matthew-Paoletta/Factors-of-Collaboration",
+    },
   ];
+
+  const getColorClasses = (accentColor) => {
+    const colorMap = {
+      green: {
+        textLight: "text-green-100",
+        textDark: "text-green-600",
+        textDarker: "text-green-700",
+        bgLight: "bg-green-50",
+        border: "border-green-200",
+        button: "bg-green-600 hover:bg-green-700",
+      },
+      blue: {
+        textLight: "text-blue-100",
+        textDark: "text-blue-600",
+        textDarker: "text-blue-700",
+        bgLight: "bg-blue-50",
+        border: "border-blue-200",
+        button: "bg-blue-600 hover:bg-blue-700",
+      },
+      purple: {
+        textLight: "text-purple-100",
+        textDark: "text-purple-600",
+        textDarker: "text-purple-700",
+        bgLight: "bg-purple-50",
+        border: "border-purple-200",
+        button: "bg-purple-600 hover:bg-purple-700",
+      },
+    };
+    return colorMap[accentColor] || colorMap.green;
+  };
 
   return (
     <section
