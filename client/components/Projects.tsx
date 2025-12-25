@@ -115,9 +115,10 @@ export default function Projects() {
           </div>
 
           {/* Projects Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => {
               const IconComponent = project.icon;
+              const colors = getColorClasses(project.accentColor);
               return (
                 <div
                   key={index}
@@ -133,7 +134,7 @@ export default function Projects() {
                           {project.title}
                         </h3>
                       </div>
-                      <p className="text-green-100 font-medium text-sm">
+                      <p className={`${colors.textLight} font-medium text-sm`}>
                         {project.subtitle}
                       </p>
                     </div>
@@ -151,7 +152,7 @@ export default function Projects() {
                     {/* Project Info */}
                     <div>
                       <div className="flex items-center justify-between mb-3">
-                        <span className="text-xs font-semibold text-green-600 uppercase tracking-wide">
+                        <span className={`text-xs font-semibold ${colors.textDark} uppercase tracking-wide`}>
                           {project.date}
                         </span>
                       </div>
@@ -164,7 +165,7 @@ export default function Projects() {
                     <div className="space-y-2.5">
                       {project.highlights.map((highlight, hIndex) => (
                         <div key={hIndex} className="flex gap-3">
-                          <span className="text-green-600 font-bold mt-0.5 flex-shrink-0 text-lg">
+                          <span className={`${colors.textDark} font-bold mt-0.5 flex-shrink-0 text-lg`}>
                             ✓
                           </span>
                           <p className="text-gray-700 text-sm leading-relaxed">
@@ -179,7 +180,7 @@ export default function Projects() {
                       {project.technologies.map((tech, tIndex) => (
                         <span
                           key={tIndex}
-                          className="bg-green-50 text-green-700 px-3 py-1.5 rounded-lg text-xs font-medium border border-green-200 hover:bg-green-100 transition"
+                          className={`${colors.bgLight} ${colors.textDarker} px-3 py-1.5 rounded-lg text-xs font-medium border ${colors.border} hover:shadow-md transition`}
                         >
                           {tech}
                         </span>
@@ -192,7 +193,7 @@ export default function Projects() {
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-4 py-2.5 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition transform hover:scale-105"
+                        className={`inline-flex items-center gap-2 px-4 py-2.5 ${colors.button} text-white font-medium rounded-lg transition transform hover:scale-105`}
                       >
                         <Github className="w-5 h-5" />
                         View on GitHub
