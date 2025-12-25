@@ -130,7 +130,7 @@ export default function Projects() {
                   >
                     <div className="flex-1 relative z-10">
                       <div className="flex items-baseline gap-3 mb-2">
-                        <h3 className="text-2xl sm:text-3xl font-bold text-white">
+                        <h3 className="text-2xl sm:text-3xl font-bold text-white break-words">
                           {project.title}
                         </h3>
                       </div>
