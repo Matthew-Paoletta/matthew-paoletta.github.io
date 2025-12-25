@@ -44,7 +44,7 @@ export default function Projects() {
     },
     {
       title: "Factors of Collaboration",
-      subtitle: "Music Artist Collaboration Prediction",
+      subtitle: "Data Science & Music Collaborations",
       date: "Class Project - Winter 2025",
       icon: Lightbulb,
       color: "from-purple-500 to-purple-700",
