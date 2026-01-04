@@ -12,11 +12,11 @@ export default function Projects() {
       description:
         "Developed and launched a Chrome extension that converts UCSD WebReg screenshots or text into .ics calendar files, enabling seamless schedule import into personal calendars.",
       highlights: [
-        "Developed and launched a Chrome extension that converts UCSD WebReg screenshots or text into .ics calendar files, enabling seamless schedule import into personal calendars",
-        "Implemented client-side JavaScript logic and integrated with the Google Calendar API to automate creation of calendar events from academic schedule data",
-        "Applied OCR techniques to identify course names, section numbers, and additional course information from uploaded schedule images or text",
-        "Maintained and enhanced the extension post-launch by fixing bugs, improving reliability, and responding to user feedback from students actively using the tool",
-        "Achieved real-world adoption with approximately 100 UCSD students actively using the extension to manage academic schedules",
+        "Built Chrome extension to convert UCSD WebReg data into .ics calendar files for easy calendar imports",
+        "Integrated Google Calendar API to automate calendar event creation from parsed schedule data",
+        "Implemented OCR technology to extract course names, sections, and details from images and text",
+        "Maintained and improved extension based on user feedback and bug fixes",
+        "Reached 100+ active UCSD users managing their schedules with the extension",
       ],
       technologies: ["CSS", "HTML", "JavaScript"],
       github: "https://github.com/Matthew-Paoletta/WebReg2Cal",
