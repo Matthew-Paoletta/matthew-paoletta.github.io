@@ -6,10 +6,10 @@ export default function Leadership() {
       location: "San Diego, CA",
       date: "Jan 2025 - Jan 2026",
       highlights: [
-        "Led all risk management operations for philanthropic and social events, ensuring safety procedures were followed by all members and volunteers",
-        "Directed and coordinated teams of members responsible for monitoring events, managing access, and enforcing risk policies",
-        "Managed and allocated a $1,000 budget to purchase cleaning supplies and safety materials, ensuring fraternity houses were consistently maintained and event-ready",
-        "Oversaw post-event cleanup operations to maintain facilities, uphold organizational standards, and preserve long-term housing and venue relationships",
+        "Led risk management for large events, proactively identifying safety risks and resolving issues in real-time",
+        "Directed and trained teams for event monitoring and access control, ensuring consistent policy enforcement",
+        "Managed $100,000 budget to track expenses and prioritize safety and maintenance supplies",
+        "Improved event procedures, reduced incidents, and strengthened venue relationships",
       ],
     },
   ];
