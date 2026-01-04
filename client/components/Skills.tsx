@@ -2,7 +2,7 @@ export default function Skills() {
   const skillCategories = [
     {
       name: "Languages",
-      skills: ["Python", "Java", "JavaScript", "C", "MATLAB"],
+      skills: ["Python", "Java", "JavaScript", "C", "MATLAB", "HTML", "CSS"],
     },
     {
       name: "Tools & Technologies",
@@ -13,8 +13,7 @@ export default function Skills() {
         "Valgrind",
         "NumPy",
         "Pandas",
-        "HTML",
-        "CSS",
+        "Google API",
       ],
     },
   ];
