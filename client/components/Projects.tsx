@@ -41,7 +41,7 @@ export default function Projects() {
         "Data Analysis",
         "Visualization",
       ],
-      github: "https://github.com/Matthew-Paoletta",
+      github: "https://github.com/Matthew-Paoletta/Playoff-Win-Predictor",
     },
     {
       title: "Factors of Collaboration",
