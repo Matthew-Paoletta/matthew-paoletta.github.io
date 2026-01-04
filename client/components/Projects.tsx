@@ -3,22 +3,23 @@ import { Github, Code2, Database, BarChart3, Lightbulb } from "lucide-react";
 export default function Projects() {
   const projects = [
     {
-      title: "Getting It Done",
-      subtitle: "Academic Productivity Chrome Extension",
+      title: "WebReg2Cal",
+      subtitle: "Course Schedule Parser Chrome Extension",
       date: "Personal Project",
       icon: Code2,
       color: "from-green-500 to-emerald-600",
       accentColor: "green",
       description:
-        "A Chrome extension using JavaScript to help college students centralize their academic information and manage deadlines efficiently.",
+        "Developed and launched a Chrome extension that converts UCSD WebReg screenshots or text into .ics calendar files, enabling seamless schedule import into personal calendars.",
       highlights: [
-        "Developing a Chrome extension using JavaScript to help college students centralize their academic information",
-        "Created a function that processes screenshots of course schedules and with the help of Google API generates .ics calendar files for external calendar applications",
-        "Parsed uploaded syllabi using OCR techniques to identify assignments, exams, and deadlines automatically",
-        "Designed a dashboard-style interface to display upcoming tasks and reminders in an organized format that assisted students in managing their work at school",
+        "Developed and launched a Chrome extension that converts UCSD WebReg screenshots or text into .ics calendar files, enabling seamless schedule import into personal calendars",
+        "Implemented client-side JavaScript logic and integrated with the Google Calendar API to automate creation of calendar events from academic schedule data",
+        "Applied OCR techniques to identify course names, section numbers, and additional course information from uploaded schedule images or text",
+        "Maintained and enhanced the extension post-launch by fixing bugs, improving reliability, and responding to user feedback from students actively using the tool",
+        "Achieved real-world adoption with approximately 100 UCSD students actively using the extension to manage academic schedules",
       ],
-      technologies: ["JavaScript", "CSS", "HTML", "OCR", "Google API"],
-      github: "https://github.com/Matthew-Paoletta",
+      technologies: ["CSS", "HTML", "JavaScript"],
+      github: "https://github.com/Matthew-Paoletta/WebReg2Cal",
     },
     {
       title: "Playoff Win Predictor",
