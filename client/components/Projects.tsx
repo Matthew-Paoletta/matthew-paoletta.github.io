@@ -18,7 +18,7 @@ export default function Projects() {
         "Maintained and improved extension based on user feedback and bug fixes",
         "Reached 100+ active UCSD users managing their schedules with the extension",
       ],
-      technologies: ["CSS", "HTML", "JavaScript"],
+      technologies: ["CSS", "HTML", "JavaScript", "Google API"],
       github: "https://github.com/Matthew-Paoletta/WebReg2Cal",
     },
     {
